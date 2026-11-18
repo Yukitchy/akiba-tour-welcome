@@ -75,7 +75,7 @@ def food_section():
     out = []
     for name, tag, hrs, img, alt, q, tx in FOOD:
         href = "https://www.google.com/maps/search/?api=1&amp;query=" + urllib.parse.quote(q)
-        out.append(f'<a class="tile" href="{href}" target="_blank" rel="noopener"><img src="{img}" alt="{alt}" loading="lazy"><span class="st">{hrs}</span><span class="td">{tx}</span><span class="tt">{tag}</span><span class="tn">{name}</span></a>')
+        out.append(f'<a class="tile" href="{href}" target="_blank" rel="noopener"><img src="{img}" alt="{alt}" loading="lazy"><span class="st">{hrs}</span><span class="tt">{tag}</span><span class="tn">{name}</span></a>')
     tiles_html = "".join(out)
     return f'''<div class="lunch"><div class="col"><h2>If you get hungry</h2><p>There is no set meal stop in the tour &mdash; we graze as we go. If you eat before or after, these are my six Akihabara picks, all a short walk from the shops. Tap a tile to open it in Google Maps.</p><div class="wall food">{tiles_html}</div><p class="eatref">More places, with my notes from eating at every one: <a href="{EATMAP}" target="_blank" rel="noopener">Where to eat in Akihabara &mdash; my full eat map &rarr;</a></p></div></div>'''
 
@@ -350,7 +350,7 @@ FINAL_BODY = """<div class="col"><div class="top"><span>GUEST GUIDE</span><span>
 <div class="survey"><div class="col"><h2>Before your tour</h2><p>Tell me your favourite series and what you want to see &mdash; I will plan the afternoon around them.</p><div class="bt"><a class="btn big" href="__FORM__" target="_blank" rel="noopener">Answer the questionnaire</a></div></div></div>
 <div class="col">
 <article class="card meet" id="meet"><div class="hd"><div><span class="genre">Meeting point</span><div class="nm"><h3>VIE DE FRANCE &mdash; BiTO AKIBA PLAZA</h3></div></div></div>
-<div class="wall w1"><div class="tile"><img src="img/meeting-cafe.jpg" alt="The Vie de France bakery café on the 1st floor of the BiTO AKIBA building" loading="lazy"><span class="tt">Meet here: the café</span></div></div>
+<div class="wall w1"><div class="tile"><img src="img/meeting-cafe.jpg" alt="The Vie de France bakery café on the 1st floor of the BiTO AKIBA building" loading="lazy"></div></div>
 <p class="tx" style="margin-top:14px"><b>How to find it:</b> come out of JR Akihabara Station at the <b>Electric Town exit</b> &mdash; the caf&eacute; is about <b>1 minute</b> away, on the 1st floor of the BiTO AKIBA building. Please come inside the caf&eacute; and look for me there. <b>There is another Vie de France nearby</b>, so please check the map.</p>
 <div class="bt"><a class="btn" href="__MAP_MEET__" target="_blank" rel="noopener">Open in Google Maps</a></div></article>
 __CARDS_SHORT__
