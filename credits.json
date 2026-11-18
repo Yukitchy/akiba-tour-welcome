@@ -91,6 +91,40 @@
     "source": "Wikimedia Commons",
     "note": "Radio Kaikan at night with the billboard artwork fully visible - no mosaic. Card 01 on the final page. Replaced the John Seb Barber 'ed' derivative on 2026-11-18: that Commons file itself has the billboard pixelated, and the un-edited original was never uploaded to Commons (Flickr source only), so an equivalent un-mosaicked Commons exterior was used instead. The John Seb Barber photo remains in use on variants A-E."
   },
+  "img/food-ramen-ifu.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Guide's eatmap (akiba-where-to-eat, img/ifu.jpg)",
+    "note": "Miso ramen with chashu at IFU Akihabara, taken in the shop. Food tile 1 on the final page, added 2026-11-18."
+  },
+  "img/food-sushi-sushiro.jpg": {
+    "title": "Sushi train.jpg",
+    "author": "ben britten",
+    "license": "CC BY 2.0",
+    "source": "Wikimedia Commons, via the guide's eatmap (img/sushiro-akiba-ekimae.jpg)",
+    "note": "Conveyor-belt sushi (generic dish photo, not the shop itself). Food tile 2 on the final page, added 2026-11-18."
+  },
+  "img/food-curry-gogo.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Guide's eatmap (akiba-where-to-eat, img/gogo-curry.jpg)",
+    "note": "Go!Go!Curry Akihabara No.1 storefront with the gorilla sign, taken at the shop. Food tile 3 on the final page, added 2026-11-18."
+  },
+  "img/food-yakiniku-toraji.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Yakiniku grill with meat, 2024-12-27. Immich asset fc6c2c6c-eeb8-49f9-8c81-62712d6104a8 (IMG_4842.HEIC), EXIF GPS 32 m from Yakiniku Toraji Akihabara (Akiba Trim 5F). Food tile 4 on the final page, added 2026-11-18."
+  },
+  "img/food-omurice-tamagoken.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Omurice on a plate printed 'TAMAGO-KEN AKIHABARA', 2026-03-08. Immich asset 8827a345-1bba-4bae-a64e-24c11f297138 (IMG_3522.JPG), EXIF GPS 53 m from Kanda Tamagoken Akihabara. Food tile 5 on the final page, added 2026-11-18."
+  },
+  "img/food-indian-cobarahetta.jpg": {
+    "title": "Vegetarian Curry.jpeg",
+    "author": "GracinhaMarco Abundo",
+    "license": "CC BY 2.0",
+    "source": "Wikimedia Commons, via the guide's eatmap (img/kobarahetta.jpg)",
+    "note": "Indian curry set with naan (generic dish photo, not the shop itself). Food tile 6 on the final page, added 2026-11-18."
+  },
   "img/trader-figures.jpg": {
     "author": "Yuuki Ichihara (own photo)",
     "source": "Immich",

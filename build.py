@@ -39,6 +39,41 @@ FINAL_PLACES = [
   "A Chuo-dori institution for used games: floor after floor of pre-owned and retro games, with whole floors of figures too.","Used games institution"),
 ]
 
+# Food picks for the final page (added 2026-11-18): all six are on Yuuki's eatmap
+# (akiba-where-to-eat) and were re-verified against official sources on 2026-11-18.
+# Kyushu Jangara was dropped: its Akihabara shop is closed for renewal until 2026-11-26.
+# name, genre tag, hours chip, img, alt, maps query (Japanese, quoted at build), one-line text
+FOOD = [
+ ("IFU AKIHABARA","MISO RAMEN","08:00&ndash;07:00","img/food-ramen-ifu.jpg","A bowl of miso ramen with chashu at Ifu Akihabara",
+  "威風 秋葉原店 神田佐久間町1-20",
+  "Miso ramen almost around the clock, one minute from the station. The ticket machine has an English mode."),
+ ("SUSHIRO","SUSHI BELT","11:00&ndash;23:00","img/food-sushi-sushiro.jpg","Plates of sushi on a conveyor belt",
+  "スシロー 秋葉原駅前店 東京都千代田区外神田1-18-19 BiTO AKIBAビル B1F",
+  "Conveyor-belt sushi in the basement of the BiTO AKIBA building &mdash; the same building as our meeting point. Weekends from 10:30."),
+ ("GO!GO!CURRY","CURRY","09:55&ndash;21:55","img/food-curry-gogo.jpg","The Go!Go!Curry Akihabara No.1 storefront with its gorilla sign",
+  "ゴーゴーカレー 秋葉原1号店 神田佐久間町1-16-1",
+  "Kanazawa-style black curry with a pork cutlet, under the big gorilla sign. Buy a ticket first &mdash; cash only."),
+ ("YAKINIKU TORAJI","YAKINIKU","17:00&ndash;23:00","img/food-yakiniku-toraji.jpg","Meat grilling on a tabletop yakiniku grill",
+  "焼肉トラジ 秋葉原店 東京都千代田区神田佐久間町1-6-5 アキバ・トリム 5F",
+  "Grill-your-own beef in private rooms, on the 5th floor of Akiba Trim by the station. Lunch sets 11:00&ndash;15:00 too."),
+ ("KANDA TAMAGOKEN","OMURICE","11:00&ndash;21:00","img/food-omurice-tamagoken.jpg","An omurice on a Tamago-ken Akihabara plate",
+  "神田たまごけん 秋葉原店 東京都千代田区外神田3-14-3",
+  "Fluffy, runny omelette rice from a tiny specialist &mdash; the plate says it all. Last order 20:45."),
+ ("COBARA-HETTA","INDIAN CURRY","11:00&ndash;22:00","img/food-indian-cobarahetta.jpg","An Indian curry set with naan",
+  "インドカリーダイニング コバラヘッタ ヨドバシAKIBA店",
+  "North Indian curries and tandoor-baked naan on the 8th floor of Yodobashi Akiba, right by the station."),
+]
+EATMAP = "https://yukitchy.github.io/akiba-where-to-eat/"
+
+def food_section():
+    import urllib.parse
+    out = []
+    for name, tag, hrs, img, alt, q, tx in FOOD:
+        href = "https://www.google.com/maps/search/?api=1&amp;query=" + urllib.parse.quote(q)
+        out.append(f'<a class="tile" href="{href}" target="_blank" rel="noopener"><img src="{img}" alt="{alt}" loading="lazy"><span class="st">{hrs}</span><span class="td">{tx}</span><span class="tt">{tag}</span><span class="tn">{name}</span></a>')
+    tiles_html = "".join(out)
+    return f'''<div class="lunch"><div class="col"><h2>If you get hungry</h2><p>There is no set meal stop in the tour &mdash; we graze as we go. If you eat before or after, these are my six Akihabara picks, all a short walk from the shops. Tap a tile to open it in Google Maps.</p><div class="wall food">{tiles_html}</div><p class="eatref">More places, with my notes from eating at every one: <a href="{EATMAP}" target="_blank" rel="noopener">Where to eat in Akihabara &mdash; my full eat map &rarr;</a></p></div></div>'''
+
 def tiles(idxs, red_first=False):
     out=[]
     for i in idxs:
@@ -315,16 +350,27 @@ FINAL_BODY = """<div class="col"><div class="top"><span>GUEST GUIDE</span><span>
 <div class="bt"><a class="btn" href="__MAP_MEET__" target="_blank" rel="noopener">Open in Google Maps</a></div></article>
 __CARDS_SHORT__
 </div>
+__FOOD__
 <div class="know"><div class="col"><h2>GOOD TO KNOW</h2><ul><li><b>The plan is flexible.</b> We choose the shops together on the day, around what you love.</li><li><b>Bring some cash</b> &mdash; 100-yen coins especially, for game centres and gashapon machines.</li><li><b>Photos:</b> I take photos during the tour and share an album with you afterwards.</li><li><b>Questions?</b> Message me on WhatsApp: <b>+81 90 4494 1989</b>.</li></ul></div></div>
-<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan at night by Stephen Kelly (CC BY 2.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, the namco Akihabara building and a case of second-hand figures are the guide&rsquo;s own photos. Opening hours checked against the shops&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
+<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan at night by Stephen Kelly (CC BY 2.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, the namco Akihabara building and a case of second-hand figures are the guide&rsquo;s own photos. Food photos: the miso ramen, the Go!Go!Curry storefront, the yakiniku grill and the Tamagoken omurice are the guide&rsquo;s own photos; conveyor-belt sushi by ben britten (CC BY 2.0) and the Indian curry set by GracinhaMarco Abundo (CC BY 2.0), via Wikimedia Commons. Opening hours checked against the shops&rsquo; and restaurants&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
 
 CSS_FINAL = CSS_A + """
 .survey{background:var(--ink);color:#fff;margin-top:26px;padding:30px 0 34px}
 .survey h2{margin:0 0 10px;font-size:32px}
 .survey p{margin:0 0 8px;font-size:16px}
 .survey .btn{background:var(--red);color:#fff}
+.lunch{background:var(--ink);color:#fff;margin-top:34px;padding:30px 0 34px}
+.lunch h2{margin:0 0 10px;font-size:32px}
+.lunch p{margin:0 0 6px;font-size:16px}
+.wall.food{grid-template-columns:1fr 1fr;margin-top:16px}
+.wall.food .tile{aspect-ratio:1/1.12}
+.st{position:absolute;right:8px;top:8px;z-index:2;font:800 11px/1 Archivo,sans-serif;letter-spacing:.08em;padding:5px 7px;background:#fff;color:var(--ink)}
+.td{position:absolute;left:8px;right:8px;bottom:58px;z-index:2;font-size:12.5px;line-height:1.45;font-weight:600;color:#fff}
+.eatref{margin:18px 0 0}
+.eatref a{color:#FF7A6E;font-weight:800}
+@media(max-width:560px){.td{font-size:11px;bottom:56px;line-height:1.4}}
 """
-fb = FINAL_BODY.replace("__MAP_MEET__", MAP_MEET).replace("__FORM__", FORM).replace("__CARDS_SHORT__", cards_short("#D9342B"))
+fb = FINAL_BODY.replace("__MAP_MEET__", MAP_MEET).replace("__FORM__", FORM).replace("__CARDS_SHORT__", cards_short("#D9342B")).replace("__FOOD__", food_section())
 final_html = HEAD.replace("__FONTS__", FONT_ARCHIVO).replace("__CSS__", CSS_FINAL).replace("__ACC__", "%23D9342B").replace("__BODY__", fb)
 final_html = final_html.replace("https://yukitchy.github.io/akiba-tour-welcome/og.jpg", "https://yukitchy.github.io/akiba-tour-welcome/img/og-red.jpg")
 (W/"index.html").write_text(final_html)
