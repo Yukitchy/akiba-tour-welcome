@@ -29,9 +29,9 @@ FINAL_PLACES = [
  PLACES[0], PLACES[1], PLACES[2],
  ("04","Second-hand books, games &amp; cards","BOOKOFF AKIHABARA EKIMAE","10:00&ndash;22:00","img/bookoff.jpg","Inside BOOK OFF Akihabara Ekimae, shelves of second-hand CDs","BOOKOFF+Akihabara+Ekimae",
   "A big second-hand store one minute from the station, with used manga, games, CDs, DVDs and trading cards across several floors.","Second-hand everything"),
- ("05","Game centre","NAMCO AKIHABARA","10:00&ndash;23:00","img/namco.jpg","The station-front street by the Electric Town exit at night &mdash; namco Akihabara stands on this street","namco+Akihabara",
+ ("05","Game centre","NAMCO AKIHABARA","10:00&ndash;23:00","img/namco-akiba.jpg","The namco Akihabara building at night, with its big red sign","namco+Akihabara",
   "Bandai Namco&rsquo;s own game centre, one minute from the Electric Town exit: crane games and gashapon floors, plus the official Ichibankuji and Bandai card game shops.","Bandai Namco's arcade"),
- ("06","Second-hand games &amp; figures","TRADER AKIHABARA","11:00&ndash;20:00","img/trader.jpg","Trader Akihabara main store on Chuo-dori","Trader+Akihabara",
+ ("06","Second-hand games &amp; figures","TRADER AKIHABARA","11:00&ndash;20:00","img/trader-aisle.jpg","Inside Trader Akihabara: a narrow aisle packed with second-hand games","Trader+Akihabara",
   "A Chuo-dori institution for used games: floor after floor of pre-owned and retro games, with whole floors of figures too.","Used games institution"),
 ]
 
@@ -300,19 +300,19 @@ def cards_short(clock_color):
 
 FINAL_BODY = """<div class="col"><div class="top"><span>GUEST GUIDE</span><span>AKIHABARA &middot; 6 PLACES</span></div>
 <h1>Your <em>Akihabara</em> Anime Tour</h1></div>
-<div class="col" style="padding:0"><div class="hero"><div class="hero3"><img src="img/street-day.jpg" alt="Akihabara's Chuo-dori street in the daytime"><img src="img/street-night.jpg" alt="Akihabara at night, neon signs"><img src="img/alley.jpg" alt="A back alley in Akihabara with small shops"></div></div>
+<div class="col" style="padding:0"><div class="hero"><div class="hero3"><img src="img/street-day.jpg" alt="Akihabara's Chuo-dori street in the daytime"><img src="img/street-night.jpg" alt="Akihabara at night, neon signs"><img src="img/hero-figures.jpg" alt="A display case full of anime figures in an Akihabara shop"></div></div>
 <div class="hb"><span>About 4 hours &middot; flexible</span><b>Meet at VIE DE FRANCE, BiTO AKIBA 1F</b></div></div>
 <div class="col"><div class="facts"><div><b>Guide</b><span>Yuuki &mdash; a local otaku guide</span></div><div><b>Meet</b><span>VIE DE FRANCE bakery caf&eacute;, BiTO AKIBA building 1F, inside the caf&eacute;</span></div><div><b>Time</b><span>About 4 hours, flexible</span></div><div><b>Style</b><span>Private tour, built around your favourite series</span></div></div></div>
 <div class="survey"><div class="col"><h2>Before your tour</h2><p>Tell me your favourite series and what you want to see &mdash; I will plan the afternoon around them.</p><div class="bt"><a class="btn big" href="__FORM__" target="_blank" rel="noopener">Answer the questionnaire</a></div></div></div>
 <div class="col">
 <article class="card meet" id="meet"><div class="hd"><div><span class="genre">Meeting point</span><div class="nm"><h3>VIE DE FRANCE &mdash; BiTO AKIBA PLAZA</h3></div></div></div>
-<div class="wall w1"><div class="tile"><img src="img/station-exit.jpg" alt="The Electric Town exit of JR Akihabara Station" loading="lazy"><span class="tt">Start here: the Electric Town exit</span></div></div>
+<div class="wall w1"><div class="tile"><img src="img/meeting-cafe.jpg" alt="The Vie de France bakery café on the 1st floor of the BiTO AKIBA building" loading="lazy"><span class="tt">Meet here: the café</span></div></div>
 <p class="tx" style="margin-top:14px"><b>How to find it:</b> come out of JR Akihabara Station at the <b>Electric Town exit</b> &mdash; the caf&eacute; is about <b>1 minute</b> away, on the 1st floor of the BiTO AKIBA building. Please come inside the caf&eacute; and look for me there. <b>There is another Vie de France nearby</b>, so please check the map.</p>
 <div class="bt"><a class="btn" href="__MAP_MEET__" target="_blank" rel="noopener">Open in Google Maps</a></div></article>
 __CARDS_SHORT__
 </div>
 <div class="know"><div class="col"><h2>GOOD TO KNOW</h2><ul><li><b>The plan is flexible.</b> We choose the shops together on the day, around what you love.</li><li><b>Bring some cash</b> &mdash; 100-yen coins especially, for game centres and gashapon machines.</li><li><b>Photos:</b> I take photos during the tour and share an album with you afterwards.</li><li><b>Questions?</b> Message me on WhatsApp: <b>+81 90 4494 1989</b>.</li></ul></div></div>
-<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Akihabara alley by Nir Yaniv (CC BY-SA 4.0); JR Akihabara Station Electric Town exit by Matthide127 (CC0); Radio Kaikan by John Seb Barber (CC BY 4.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0); Trader Akihabara main store by Starchild1884 (CC BY-SA 3.0); the station-front street by the Electric Town exit, where namco Akihabara stands, by nagi usano (CC BY 2.0). Opening hours checked against the shops&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
+<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan by John Seb Barber (CC BY 4.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, the namco Akihabara building and inside Trader Akihabara are the guide&rsquo;s own photos. Opening hours checked against the shops&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
 
 CSS_FINAL = CSS_A + """
 .survey{background:var(--ink);color:#fff;margin-top:26px;padding:30px 0 34px}

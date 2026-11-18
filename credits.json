@@ -64,18 +64,24 @@
     "source": "Wikimedia Commons",
     "note": "Interior CD floor of BOOK OFF Akihabara Ekimae (GPS in EXIF matches the store). Card 04 on the final page."
   },
-  "img/namco.jpg": {
-    "title": "雪の秋葉原 Snow in Akihabara (53511028888).jpg",
-    "author": "nagi usano",
-    "license": "CC BY 2.0",
-    "source": "Wikimedia Commons",
-    "note": "No Commons/Openverse photo of the namco Akihabara storefront itself exists (searched 2026-11-18). Fallback: the station-front street by the JR Electric Town exit (atre frontage) that the store stands on, 1 min from the exit. Card 05 on the final page."
+  "img/hero-figures.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "S.H.Figuarts display case (One Piece figures) inside an Akihabara shop, 2026-03-10. Immich asset e206ea8e-95b0-412a-a34d-7528cedae603 (IMG_3674.HEIC). Hero collage, right slot, on the final page. Replaced the Wikimedia alley photo on 2026-11-18."
   },
-  "img/trader.jpg": {
-    "title": "TRADER Akihabara.jpg",
-    "author": "Starchild1884",
-    "license": "CC BY-SA 3.0",
-    "source": "Wikimedia Commons",
-    "note": "Trader Akihabara main store (Honten) storefront on Chuo-dori; photo from 2013, previous building on the same site (rebuilt 2024). Card 06 on the final page."
+  "img/meeting-cafe.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Vie de France Bakery & Cafe exterior, BiTO AKIBA PLAZA 1F, 2026-11-03. Immich asset 76ed3adc-0670-4807-bc41-2eff291d88fd (IMG_2062.HEIC). Meeting point card on the final page. Replaced the JR station-front photo on 2026-11-18."
+  },
+  "img/namco-akiba.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "namco Akihabara building at night with its big red sign, 2025-03-02. Immich asset f51ed22f-5ef6-4192-acfd-2f84564496d4 (IMG_3778.HEIC). Card 05 on the final page. Replaced the CC BY station-front street fallback (nagi usano) on 2026-11-18."
+  },
+  "img/trader-aisle.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Inside Trader Akihabara: a narrow aisle packed with second-hand games, 2025-04-04 (EXIF GPS 61 m from the store). Immich asset 1892fe2b-0102-4fcf-a0d9-e40dc4aae07e (IMG_6203.HEIC). Card 06 on the final page. Replaced the 2013 CC BY-SA storefront photo (previous building) on 2026-11-18."
   }
 }
