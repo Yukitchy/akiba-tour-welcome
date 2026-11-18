@@ -30,12 +30,17 @@ FINAL_PLACES = [
  # PLACES[0] (John Seb Barber "ed" derivative, billboard pixelated on Commons) stays for variants A-E.
  ("01","Figures, cards, hobby shops","RADIO KAIKAN","10:00&ndash;20:00","img/radio-kaikan-night.jpg","Akihabara Radio Kaikan building","Akihabara+Radio+Kaikan",
   "The ten-floor landmark right outside the Electric Town exit. Floors of figures, trading cards, dolls and model kits &mdash; if it exists in Akihabara, it is probably somewhere in this building.","The landmark tower"),
- PLACES[1], PLACES[2],
- ("04","Second-hand books, games &amp; cards","BOOKOFF AKIHABARA EKIMAE","10:00&ndash;22:00","img/bookoff.jpg","Inside BOOK OFF Akihabara Ekimae, shelves of second-hand CDs","BOOKOFF+Akihabara+Ekimae",
+ # Cards 02-06 use Yuuki's own Immich photos on the final page only (swapped 2026-11-18);
+ # PLACES[1]/PLACES[2] (Commons building exteriors) stay for variants A-E.
+ ("02","Second-hand manga &amp; toys","MANDARAKE COMPLEX","12:00&ndash;20:00","img/mandarake-goods.jpg","A wall of packaged character goods for sale in an Akihabara shop","Mandarake+Complex+Akihabara",
+  "Eight floors of pre-owned manga, doujinshi, toys, animation cels and cards. This is the place to hunt for the rare thing that sold out everywhere else years ago.","Second-hand treasures"),
+ ("03","New releases &amp; goods","ANIMATE AKIHABARA","10:00&ndash;21:00","img/animate-goods.jpg","Anime character goods on display in an Akihabara shop","Animate+Akihabara",
+  "Animate&rsquo;s Akihabara flagship, renewed in 2026: new manga, anime discs, music and character goods across two buildings, with event floors for whatever is airing now.","New &amp; official goods"),
+ ("04","Second-hand books, games &amp; cards","BOOKOFF AKIHABARA EKIMAE","10:00&ndash;22:00","img/bookoff-manga.jpg","A wall of manga volumes in an Akihabara bookshop","BOOKOFF+Akihabara+Ekimae",
   "A big second-hand store one minute from the station, with used manga, games, CDs, DVDs and trading cards across several floors.","Second-hand everything"),
- ("05","Game centre","NAMCO AKIHABARA","10:00&ndash;23:00","img/namco-akiba.jpg","The namco Akihabara building at night, with its big red sign","namco+Akihabara",
+ ("05","Game centre","NAMCO AKIHABARA","10:00&ndash;23:00","img/namco-gacha.jpg","Rows of gashapon capsule machines in Akihabara","namco+Akihabara",
   "Bandai Namco&rsquo;s own game centre, one minute from the Electric Town exit: crane games and gashapon floors, plus the official Ichibankuji and Bandai card game shops.","Bandai Namco's arcade"),
- ("06","Second-hand games &amp; figures","TRADER AKIHABARA","11:00&ndash;20:00","img/trader-figures.jpg","Shelves of second-hand anime figures in an Akihabara shop","Trader+Akihabara",
+ ("06","Second-hand games &amp; figures","TRADER AKIHABARA","11:00&ndash;20:00","img/trader-nendoroid.jpg","A display wall of Nendoroid figures in an Akihabara shop","Trader+Akihabara",
   "A Chuo-dori institution for used games: floor after floor of pre-owned and retro games, with whole floors of figures too.","Used games institution"),
 ]
 
@@ -352,7 +357,7 @@ __CARDS_SHORT__
 </div>
 __FOOD__
 <div class="know"><div class="col"><h2>GOOD TO KNOW</h2><ul><li><b>The plan is flexible.</b> We choose the shops together on the day, around what you love.</li><li><b>Bring some cash</b> &mdash; 100-yen coins especially, for game centres and gashapon machines.</li><li><b>Photos:</b> I take photos during the tour and share an album with you afterwards.</li><li><b>Questions?</b> Message me on WhatsApp: <b>+81 90 4494 1989</b>.</li></ul></div></div>
-<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan at night by Stephen Kelly (CC BY 2.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, the namco Akihabara building and a case of second-hand figures are the guide&rsquo;s own photos. Food photos: the miso ramen, the Go!Go!Curry storefront, the yakiniku grill and the Tamagoken omurice are the guide&rsquo;s own photos; conveyor-belt sushi by ben britten (CC BY 2.0) and the Indian curry set by GracinhaMarco Abundo (CC BY 2.0), via Wikimedia Commons. Opening hours checked against the shops&rsquo; and restaurants&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
+<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan at night by Stephen Kelly (CC BY 2.0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, and the shop photos in the cards &mdash; the wall of character goods, the anime goods display, the manga shelves, the gashapon machines and the figure display wall &mdash; are the guide&rsquo;s own photos, taken in Akihabara. Food photos: the miso ramen, the Go!Go!Curry storefront, the yakiniku grill and the Tamagoken omurice are the guide&rsquo;s own photos; conveyor-belt sushi by ben britten (CC BY 2.0) and the Indian curry set by GracinhaMarco Abundo (CC BY 2.0), via Wikimedia Commons. Opening hours checked against the shops&rsquo; and restaurants&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
 
 CSS_FINAL = CSS_A + """
 .survey{background:var(--ink);color:#fff;margin-top:26px;padding:30px 0 34px}

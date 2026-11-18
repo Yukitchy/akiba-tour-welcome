@@ -62,7 +62,7 @@
     "author": "Matthide127",
     "license": "CC0 1.0",
     "source": "Wikimedia Commons",
-    "note": "Interior CD floor of BOOK OFF Akihabara Ekimae (GPS in EXIF matches the store). Card 04 on the final page."
+    "note": "Interior CD floor of BOOK OFF Akihabara Ekimae (GPS in EXIF matches the store). Was card 04 on the final page until 2026-11-18, when it was replaced by img/bookoff-manga.jpg (Yuuki asked for a manga-shelf photo)."
   },
   "img/hero-figures.jpg": {
     "author": "Yuuki Ichihara (own photo)",
@@ -77,7 +77,7 @@
   "img/namco-akiba.jpg": {
     "author": "Yuuki Ichihara (own photo)",
     "source": "Immich",
-    "note": "namco Akihabara building at night with its big red sign, 2025-03-02. Immich asset f51ed22f-5ef6-4192-acfd-2f84564496d4 (IMG_3778.HEIC). Card 05 on the final page. Replaced the CC BY station-front street fallback (nagi usano) on 2026-11-18."
+    "note": "namco Akihabara building at night with its big red sign, 2025-03-02. Immich asset f51ed22f-5ef6-4192-acfd-2f84564496d4 (IMG_3778.HEIC). Was card 05 on the final page until 2026-11-18, when it was replaced by img/namco-gacha.jpg (Yuuki asked for the gacha floor). Replaced the CC BY station-front street fallback (nagi usano) on 2026-11-18."
   },
   "img/trader-aisle.jpg": {
     "author": "Yuuki Ichihara (own photo)",
@@ -128,6 +128,31 @@
   "img/trader-figures.jpg": {
     "author": "Yuuki Ichihara (own photo)",
     "source": "Immich",
-    "note": "Glass case packed with second-hand figures (Sailor Moon, Cardcaptor Sakura; Robot Robot price tags), Akihabara, 2019-11-09. Immich asset 0a793ac9-8749-45b6-a454-095a8506b55d (IMG_20191109_112200.jpg), EXIF GPS 128 m from Trader Akihabara. Card 06 on the final page. Replaced img/trader-aisle.jpg on 2026-11-18."
+    "note": "Glass case packed with second-hand figures (Sailor Moon, Cardcaptor Sakura; Robot Robot price tags), Akihabara, 2019-11-09. Immich asset 0a793ac9-8749-45b6-a454-095a8506b55d (IMG_20191109_112200.jpg), EXIF GPS 128 m from Trader Akihabara. Was card 06 on the final page until 2026-11-18, when Yuuki rejected it as not verifiably Trader and it was replaced by img/trader-nendoroid.jpg. Replaced img/trader-aisle.jpg on 2026-11-18."
+  },
+  "img/mandarake-goods.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "A wall of packaged character goods (Death Note straps, keychains, mini figures) with price tags in an Akihabara shop, 2026-10-09. Immich asset 5f93b78b-2b58-4f6d-8265-839432fedff5 (IMG_9840.HEIC), EXIF GPS about 124 m from Mandarake Complex, so the credit does not claim it is Mandarake's own interior. Card 02 on the final page. Replaced the Wikimedia Commons Mandarake building exterior on 2026-11-18 (Yuuki asked for a product-shelf photo)."
+  },
+  "img/animate-goods.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Yuru Camp character goods wall (tapestries, acrylic stands, stickers with new-item tags) in an Akihabara anime shop, 2022-07-26. Immich asset e03b1265-8287-4be4-8571-922ef2e7701f (IMG_5307.HEIC), EXIF GPS about 54 m from Animate Akihabara. Card 03 on the final page. Replaced the Wikimedia Commons Animate building exterior on 2026-11-18 (Yuuki asked for a more anime-goods photo)."
+  },
+  "img/bookoff-manga.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "A long wall of One Piece manga volumes in an Akihabara bookshop, 2025-04-22. Immich asset 69985cdd-4e8c-4739-beee-477f2f015e7e (IMG_8154.HEIC), EXIF GPS about 84 m from BOOKOFF Akihabara Ekimae. Card 04 on the final page. Replaced img/bookoff.jpg on 2026-11-18 (Yuuki asked for a manga-shelf photo)."
+  },
+  "img/namco-gacha.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Rows of Bandai gashapon capsule machines with a guest turning one, Akihabara, 2024-09-20. Immich asset f0f4934d-448f-4100-845f-4093446ce689 (IMG_7614.JPG), EXIF GPS about 58 m from namco Akihabara. Card 05 on the final page. Replaced img/namco-akiba.jpg on 2026-11-18 (Yuuki asked for the gacha floor photo)."
+  },
+  "img/trader-nendoroid.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "A display wall of Hatsune Miku Nendoroid figures in an Akihabara shop, 2025-03-10. Immich asset 0b737826-cee4-44ff-9a9e-0c93ec18c9fb (IMG_4367.HEIC). IMPORTANT: no Immich figure photo geotags to Trader Akihabara itself - the photos taken within a few metres of Trader are all of the neighbouring Gachapon Kaikan. This is the closest figure photo found, EXIF GPS about 69 m from Trader (Sotokanda 3-14-10); it is NOT verified as Trader's interior and the card alt text says so. Card 06 on the final page. Replaced img/trader-figures.jpg on 2026-11-18."
   }
 }
