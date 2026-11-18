@@ -26,12 +26,16 @@ PLACES = [
 
 # Final page (index.html) line-up, decided 2026-11-18: 04-06 swapped to BOOK OFF / namco / Trader.
 FINAL_PLACES = [
- PLACES[0], PLACES[1], PLACES[2],
+ # Card 01 uses the un-mosaicked Stephen Kelly night shot on the final page only;
+ # PLACES[0] (John Seb Barber "ed" derivative, billboard pixelated on Commons) stays for variants A-E.
+ ("01","Figures, cards, hobby shops","RADIO KAIKAN","10:00&ndash;20:00","img/radio-kaikan-night.jpg","Akihabara Radio Kaikan building","Akihabara+Radio+Kaikan",
+  "The ten-floor landmark right outside the Electric Town exit. Floors of figures, trading cards, dolls and model kits &mdash; if it exists in Akihabara, it is probably somewhere in this building.","The landmark tower"),
+ PLACES[1], PLACES[2],
  ("04","Second-hand books, games &amp; cards","BOOKOFF AKIHABARA EKIMAE","10:00&ndash;22:00","img/bookoff.jpg","Inside BOOK OFF Akihabara Ekimae, shelves of second-hand CDs","BOOKOFF+Akihabara+Ekimae",
   "A big second-hand store one minute from the station, with used manga, games, CDs, DVDs and trading cards across several floors.","Second-hand everything"),
  ("05","Game centre","NAMCO AKIHABARA","10:00&ndash;23:00","img/namco-akiba.jpg","The namco Akihabara building at night, with its big red sign","namco+Akihabara",
   "Bandai Namco&rsquo;s own game centre, one minute from the Electric Town exit: crane games and gashapon floors, plus the official Ichibankuji and Bandai card game shops.","Bandai Namco's arcade"),
- ("06","Second-hand games &amp; figures","TRADER AKIHABARA","11:00&ndash;20:00","img/trader-aisle.jpg","Inside Trader Akihabara: a narrow aisle packed with second-hand games","Trader+Akihabara",
+ ("06","Second-hand games &amp; figures","TRADER AKIHABARA","11:00&ndash;20:00","img/trader-figures.jpg","Shelves of second-hand anime figures in an Akihabara shop","Trader+Akihabara",
   "A Chuo-dori institution for used games: floor after floor of pre-owned and retro games, with whole floors of figures too.","Used games institution"),
 ]
 
@@ -312,7 +316,7 @@ FINAL_BODY = """<div class="col"><div class="top"><span>GUEST GUIDE</span><span>
 __CARDS_SHORT__
 </div>
 <div class="know"><div class="col"><h2>GOOD TO KNOW</h2><ul><li><b>The plan is flexible.</b> We choose the shops together on the day, around what you love.</li><li><b>Bring some cash</b> &mdash; 100-yen coins especially, for game centres and gashapon machines.</li><li><b>Photos:</b> I take photos during the tour and share an album with you afterwards.</li><li><b>Questions?</b> Message me on WhatsApp: <b>+81 90 4494 1989</b>.</li></ul></div></div>
-<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan by John Seb Barber (CC BY 4.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, the namco Akihabara building and inside Trader Akihabara are the guide&rsquo;s own photos. Opening hours checked against the shops&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
+<details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan at night by Stephen Kelly (CC BY 2.0); Mandarake Complex by &#27491;&#21644; (CC BY-SA 3.0); Animate Akihabara by Dick Thomas Johnson (CC BY 2.0); inside BOOK OFF Akihabara Ekimae by Matthide127 (CC0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, the namco Akihabara building and a case of second-hand figures are the guide&rsquo;s own photos. Opening hours checked against the shops&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
 
 CSS_FINAL = CSS_A + """
 .survey{background:var(--ink);color:#fff;margin-top:26px;padding:30px 0 34px}

@@ -82,6 +82,18 @@
   "img/trader-aisle.jpg": {
     "author": "Yuuki Ichihara (own photo)",
     "source": "Immich",
-    "note": "Inside Trader Akihabara: a narrow aisle packed with second-hand games, 2025-04-04 (EXIF GPS 61 m from the store). Immich asset 1892fe2b-0102-4fcf-a0d9-e40dc4aae07e (IMG_6203.HEIC). Card 06 on the final page. Replaced the 2013 CC BY-SA storefront photo (previous building) on 2026-11-18."
+    "note": "Inside Trader Akihabara: a narrow aisle packed with second-hand games, 2025-04-04 (EXIF GPS 61 m from the store). Immich asset 1892fe2b-0102-4fcf-a0d9-e40dc4aae07e (IMG_6203.HEIC). Was card 06 on the final page until 2026-11-18, when it was replaced by img/trader-figures.jpg (Yuuki asked for a figure photo)."
+  },
+  "img/radio-kaikan-night.jpg": {
+    "title": "Akihabara Radio Kaikan Shopping Building (53416976349).jpg",
+    "author": "Stephen Kelly",
+    "license": "CC BY 2.0",
+    "source": "Wikimedia Commons",
+    "note": "Radio Kaikan at night with the billboard artwork fully visible - no mosaic. Card 01 on the final page. Replaced the John Seb Barber 'ed' derivative on 2026-11-18: that Commons file itself has the billboard pixelated, and the un-edited original was never uploaded to Commons (Flickr source only), so an equivalent un-mosaicked Commons exterior was used instead. The John Seb Barber photo remains in use on variants A-E."
+  },
+  "img/trader-figures.jpg": {
+    "author": "Yuuki Ichihara (own photo)",
+    "source": "Immich",
+    "note": "Glass case packed with second-hand figures (Sailor Moon, Cardcaptor Sakura; Robot Robot price tags), Akihabara, 2019-11-09. Immich asset 0a793ac9-8749-45b6-a454-095a8506b55d (IMG_20191109_112200.jpg), EXIF GPS 128 m from Trader Akihabara. Card 06 on the final page. Replaced img/trader-aisle.jpg on 2026-11-18."
   }
 }
