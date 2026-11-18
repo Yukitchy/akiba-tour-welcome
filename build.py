@@ -326,6 +326,6 @@ CSS_FINAL = CSS_A + """
 """
 fb = FINAL_BODY.replace("__MAP_MEET__", MAP_MEET).replace("__FORM__", FORM).replace("__CARDS_SHORT__", cards_short("#D9342B"))
 final_html = HEAD.replace("__FONTS__", FONT_ARCHIVO).replace("__CSS__", CSS_FINAL).replace("__ACC__", "%23D9342B").replace("__BODY__", fb)
-final_html = final_html.replace("https://yukitchy.github.io/akiba-tour-welcome/og.jpg", "https://yukitchy.github.io/akiba-tour-welcome/img/og-main.jpg")
+final_html = final_html.replace("https://yukitchy.github.io/akiba-tour-welcome/og.jpg", "https://yukitchy.github.io/akiba-tour-welcome/img/og-red.jpg")
 (W/"index.html").write_text(final_html)
 print("wrote index.html (final)", len(final_html))
