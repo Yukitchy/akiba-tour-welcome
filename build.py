@@ -7,6 +7,7 @@ PIN = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path 
 def CLOCK(c): return f'<svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="{c}" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="{c}" stroke-width="2" stroke-linecap="round"/></svg>'
 MAP_MEET = "https://www.google.com/maps/search/?api=1&amp;query=Vie+de+France+BiTO+AKIBA+PLAZA"
 FORM = "https://docs.google.com/forms/d/e/1FAIpQLScm_VkR8xnl5CxdyTR0NYIED2mp-mLKmR5w8jNWIkxk82U8Uw/viewform"
+FORM_PRIVATE = "https://docs.google.com/forms/d/e/1FAIpQLSfBAILC8KIbW065F8vGTWuBaplnJ6F219-yWF5WoSYEb4lfYA/viewform"
 
 PLACES = [
  # no, genre, name, hours, img, alt, maps query, text, tile tag
@@ -347,7 +348,7 @@ FINAL_BODY = """<div class="col"><div class="top"><span>GUEST GUIDE</span><span>
 <div class="col" style="padding:0"><div class="hero"><div class="hero3"><img src="img/street-day.jpg" alt="Akihabara's Chuo-dori street in the daytime"><img src="img/street-night.jpg" alt="Akihabara at night, neon signs"><img src="img/hero-figures.jpg" alt="A display case full of anime figures in an Akihabara shop"></div></div>
 <div class="hb"><span>About 4 hours &middot; flexible</span><b>Meet at VIE DE FRANCE, BiTO AKIBA 1F</b></div></div>
 <div class="col"><div class="facts"><div><b>Guide</b><span>Yuuki &mdash; a local otaku guide</span></div><div><b>Meet</b><span>VIE DE FRANCE bakery caf&eacute;, BiTO AKIBA building 1F, inside the caf&eacute;</span></div><div><b>Time</b><span>About 4 hours, flexible</span></div><div><b>Style</b><span>Private tour, built around your favourite series</span></div></div></div>
-<div class="survey"><div class="col"><h2>Before your tour</h2><p>Tell me your favourite series and what you want to see &mdash; I will plan the afternoon around them.</p><div class="bt"><a class="btn big" href="__FORM__" target="_blank" rel="noopener">Answer the questionnaire</a></div></div></div>
+<div class="col"><div class="qcta-wrap"><section class="qcta"><h2>Tell me what you love</h2><div class="rule"></div><p>Fill in a quick questionnaire before your tour, and I&rsquo;ll plan the day around your favourite series.</p><a class="btn" href="__FORM_PRIVATE__" target="_blank" rel="noopener">Answer the questionnaire</a></section></div></div>
 <div class="col">
 <article class="card meet" id="meet"><div class="hd"><div><span class="genre">Meeting point</span><div class="nm"><h3>VIE DE FRANCE &mdash; BiTO AKIBA PLAZA</h3></div></div></div>
 <div class="wall w1"><div class="tile"><img src="img/meeting-cafe.jpg" alt="The Vie de France bakery café on the 1st floor of the BiTO AKIBA building" loading="lazy"></div></div>
@@ -360,10 +361,12 @@ __FOOD__
 <details class="crd"><summary>Photo credits and sources</summary><p class="cr">Photos via Wikimedia Commons: Akihabara street (day) by Nickdrj (public domain); Akihabara at night by ElHeineken (CC BY 4.0); Radio Kaikan at night by Stephen Kelly (CC BY 2.0). The figure display case, the Vie de France caf&eacute; at BiTO AKIBA, and the shop photos in the cards &mdash; the wall of character goods, the anime goods display, the manga shelves, the gashapon machines and the figure display wall &mdash; are the guide&rsquo;s own photos, taken in Akihabara. Food photos: the miso ramen, the Go!Go!Curry storefront, the yakiniku grill and the Tamagoken omurice are the guide&rsquo;s own photos; conveyor-belt sushi by ben britten (CC BY 2.0) and the Indian curry set by GracinhaMarco Abundo (CC BY 2.0), via Wikimedia Commons. Opening hours checked against the shops&rsquo; and restaurants&rsquo; official sites on 18 November 2026. Hours can change; we will confirm together on the day.</p></details>"""
 
 CSS_FINAL = CSS_A + """
-.survey{background:var(--ink);color:#fff;margin-top:26px;padding:30px 0 34px}
-.survey h2{margin:0 0 10px;font-size:32px}
-.survey p{margin:0 0 8px;font-size:16px}
-.survey .btn{background:var(--red);color:#fff}
+.qcta-wrap{margin-top:20px;padding:6px 18px 20px 6px}
+.qcta{background:#fff;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:26px 22px 28px}
+.qcta h2{margin:0 0 8px;font-size:30px;line-height:1.02}
+.qcta .rule{width:56px;height:6px;background:var(--red);margin:0 0 14px}
+.qcta p{font-size:16px;margin:0 0 18px}
+.qcta .btn{display:inline-flex;padding:0 22px;background:var(--red);color:#fff}
 .lunch{background:var(--ink);color:#fff;margin-top:34px;padding:30px 0 34px}
 .lunch h2{margin:0 0 10px;font-size:32px}
 .lunch p{margin:0 0 6px;font-size:16px}
@@ -375,7 +378,7 @@ CSS_FINAL = CSS_A + """
 .eatref a{color:#FF7A6E;font-weight:800}
 @media(max-width:560px){.td{font-size:11px;bottom:56px;line-height:1.4}}
 """
-fb = FINAL_BODY.replace("__MAP_MEET__", MAP_MEET).replace("__FORM__", FORM).replace("__CARDS_SHORT__", cards_short("#D9342B")).replace("__FOOD__", food_section())
+fb = FINAL_BODY.replace("__MAP_MEET__", MAP_MEET).replace("__FORM__", FORM).replace("__FORM_PRIVATE__", FORM_PRIVATE).replace("__CARDS_SHORT__", cards_short("#D9342B")).replace("__FOOD__", food_section())
 final_html = HEAD.replace("__FONTS__", FONT_ARCHIVO).replace("__CSS__", CSS_FINAL).replace("__ACC__", "%23D9342B").replace("__BODY__", fb)
 final_html = final_html.replace("https://yukitchy.github.io/akiba-tour-welcome/og.jpg", "https://yukitchy.github.io/akiba-tour-welcome/img/og-red.jpg")
 (W/"index.html").write_text(final_html)
